@@ -10,7 +10,7 @@ This plugin will preview a file using UIDocumentInteractionController and allow 
 ## Installation
 
 ```
-cordova plugin add cordova-ios-file-preview
+cordova plugin add https://github.com/ipsilondev/cordova-ios-file-preview.git
 ```
 
 ## Usage
