@@ -1,0 +1,37 @@
+{
+  "name": "cordova-ios-file-preview",
+  "version": "1.0.0",
+  "description": "Preview, share of saved app documents on native iOS dialog",
+  "cordova": {
+    "id": "cordova-ios-file-preview",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipsilondev/cordova-ios-file-preview.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=8.0.0"
+    }
+  ],
+  "author": {
+    "name": "David Rene Comba Lareu",
+    "email": "david@ipsilondev.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipsilondev/cordova-ios-file-preview/issues"
+  },
+  "homepage": "https://github.com/ipsilondev/cordova-ios-file-preview#readme",
+  "dependencies": {
+    "xcode": "^0.8.2"
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova-ios-file-preview" version="1.0.0">
+
+  <name>iOSFilePreview</name>
+  <description>An iOS document preview and open plugin</description>
+  <author>Sebastian Döll</author>
+  <license>MIT</license>
+
+  <engines>
+      <engine name="cordova" version=">=8.0.0" />
+  </engines>
+
+  <js-module src="www/iOSFilePreview.js" name="iOSFilePreview">
+      <clobbers target="iOSFilePreview" />
+  </js-module>
+
+  <!-- iOS -->
+  <platform name="ios">
+    <hook type="after_plugin_install" src="scripts/afterInstall.js" />
+    <config-file target="config.xml" parent="/*">
+      <feature name="iOSFilePreview">
+        <param name="ios-package" value="CDViOSFilePreview" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/iOSFilePreview.swift" />
+    <header-file src="src/ios/iOSFilePreview-Bridging-Header.h" />
+    <config-file target="*-Info.plist" parent="UIFileSharingEnabled">
+            <true/>
+    </config-file>
+    <config-file target="*-Info.plist" parent="LSSupportsOpeningDocumentsInPlace">
+            <true/>
+    </config-file>
+  </platform>
+
+</plugin>
